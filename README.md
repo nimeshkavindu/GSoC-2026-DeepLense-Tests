@@ -34,7 +34,6 @@ Instead of relying on standard "black-box" transfer learning, this test focuses 
 * **Physics-Safe Augmentation:** To prevent overfitting on faint topological features, structural symmetries (random horizontal/vertical flips and 90-degree rotations) were dynamically applied via the PyTorch DataLoader.
 
 #### Test I Evaluation
-*(Add your ROC Curve and Confusion Matrix images here)*
 ![Test I ROC Curve](images/roc_test1.png)
 
 ---
@@ -50,7 +49,6 @@ This test completely redesigns the classification pipeline by engineering `LensP
 * **Fusion Decoder (EfficientNet-B0):** The Raw Image, the Reconstructed Image, and the Preprocessed Gradient Map are concatenated into a 3-channel tensor. This fused representation is fed into an EfficientNet-B0 backbone, forcing the classifier to base its decisions on structural physics rather than standard pixel intensity.
 
 #### Test VII Evaluation
-*(Add your ROC Curve and Confusion Matrix images here)*
 ![Test VII ROC Curve](images/roc_test7.png)
 
 ---
